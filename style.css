@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 800px;
+    margin: auto;
+}
+
+.galeria{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.galeria .kep{
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 200px;
+    font-size: 10px;
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+
+
+.nagykep {
+    display:grid;
+    grid-template-columns: 60px auto 60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.nagykep img {
+    width: 100%;
+}
+
