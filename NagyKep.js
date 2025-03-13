@@ -4,15 +4,16 @@ export default class NagyKep{
     #balGombElem;
     #jobbGombElem;
     #lista;
-    constructor(szuloElem, balGombElem, jobbGombElem, lista){
+    constructor(szuloElem, balGombElem, jobbGombElem, lista, startIndex){
         this.#szuloElem = szuloElem;
         this.#balGombElem = balGombElem;
         this.#jobbGombElem = jobbGombElem;
         this.#lista = lista;
+        this.startIndex = startIndex;
         this.megjelenit();
     }
     megjelenit(){
-        var nagykepIndex = 0;
+        var nagykepIndex = this.startIndex;
         this.renderNagykep(nagykepIndex);
 
         this.#jobbGombElem.addEventListener('mousedown', ()=>{ //IT IS IMPORTANT TO USE ()=> AND NOT function(){} BECAUSE this. WILL REFRENCE THE BUTTON OBJECT NOT THE NagyKep OBJECT

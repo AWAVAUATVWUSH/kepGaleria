@@ -3,7 +3,7 @@ import Galeria from "./Galeria.js";
 import NagyKep from "./NagyKep.js";
 new Galeria(document.querySelector(".galeria"),KEPEK);
 
-new NagyKep(document.querySelector(".kiemeltkep"), document.getElementById("balgomb"), document.getElementById("jobbgomb"), KEPEK);
+new NagyKep(document.querySelector(".kiemeltkep"), document.getElementById("balgomb"), document.getElementById("jobbgomb"), KEPEK, 0);
 
 
 

@@ -14,6 +14,6 @@ export default class Kep{
                 <img src="${this.#eUt}" alt="Image Missing">
             </div>
         `;
-        this.szuloElem.innerHTML += htmlText;
+        this.szuloElem.insertAdjacentHTML ("beforeend", htmlText);
     }
 }
